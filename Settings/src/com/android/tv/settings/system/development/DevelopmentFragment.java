@@ -1498,6 +1498,7 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
     }
 
     private void updateUsbConfigurationValues() {
+        if (true) return;
         final UsbManager manager = (UsbManager) getActivity().getSystemService(Context.USB_SERVICE);
         if (mUsbConfiguration == null) {
             return;
