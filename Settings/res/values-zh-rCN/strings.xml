@@ -1143,4 +1143,61 @@
     <string name="find_my_remote_slice_description" msgid="313598681990933215">"Google TV 上有一个按钮，按下后遥控器会响铃 30 秒钟。此操作仅对支持的 Google TV 遥控器有效。\n\n若要停止响铃，请按下遥控器上的任意按钮。"</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"当“查找我的遥控器”处于启用状态时，您可让找不到的 Google TV 遥控器响铃，从而定位它。"</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"响铃"</string>
+    <string name="waydroid_options">Waydroid 选项</string>
+    <string name="waydroid_notification_channel">Waydroid 通知</string>
+
+    <string name="current_native_bridge">目前的 ARM 转译层</string>
+    <string name="current_gralloc_impl">目前的 Gralloc 实现</string>
+    <string name="current_codec2_impl">目前的 Codec2 实现</string>
+
+    <string name="waydroid_native_bridge_category">ARM 支持</string>
+    <string name="native_bridge">ARM 转译层</string>
+    <string name="native_bridge_summary">这对于运行不具备 x86 支持的程序来说是必须的</string>
+
+    <string name="waydroid_graphics_category">图形</string>
+    <string name="gralloc_impl">Gralloc 实现</string>
+    <string name="gralloc_impl_summary">只有 minigbm/minigbm_celadon 支持 YUV 视频格式</string>
+
+    <string name="waydroid_gapps_category">Google 套件</string>
+    <string name="device_spoof">设备伪装</string>
+    <string name="device_spoof_summary">启用设备伪装可绕过 Google Play 认证检查</string>
+
+    <string name="waydroid_video_category">视频</string>
+    <string name="codec2_impl">Codec2 实现</string>
+    <string name="codec2_impl_summary">选择一种用于视频处理的 Codec2 实现</string>
+    <string name="hwaccel">硬件视频加速</string>
+    <string name="hwaccel_summary">启用基于 VA-API 的硬件视频加速支持</string>
+    <string name="hwaccel_drm_prime">零拷贝视频解码支持</string>
+    <string name="hwaccel_drm_prime_summary">这通常能为 Intel 核显提供更好的视频播放性能（仅适用于支持 YUV 的 gralloc 实现）</string>
+    <string name="hwaccel_force_hwaccel">强制调用硬件视频解码</string>
+    <string name="hwaccel_force_hwaccel_summary">播放视频时只使用支持硬解的视频编码</string>
+    <string name="hwaccel_supported_codecs">目前 GPU 支持硬解的编码</string>
+
+    <string name="waydroid_misc_category">杂项</string>
+    <string name="forward_notifications">通知集成</string>
+    <string name="forward_notifications_summary">通过 D-Bus 将 Android 通知转发到 Wayland/X11</string>
+
+    <string-array name="native_bridge_entries">
+        <item>已停用</item>
+        <item>libhoudini (建议)</item>
+    </string-array>
+
+    <string-array name="gralloc_impl_entries">
+        <item>自动 (建议)</item>
+        <item>minigbm</item>
+        <item>minigbm_celadon (仅支持 Intel GPU)</item>
+        <item>minigbm_gbm_mesa</item>
+        <item>gbm</item>
+    </string-array>
+
+    <string-array name="device_spoof_entries">
+        <item>已停用</item>
+    </string-array>
+
+    <string-array name="codec2_impl_entries">
+        <item>自动 (建议)</item>
+        <item>c2.ffmpeg + c2.android</item>
+        <item>c2.intel + c2.android (需要 minigbm_celadon)</item>
+        <item>c2.android (需要支持 YUV 的 gralloc 实现)</item>
+    </string-array>
 </resources>

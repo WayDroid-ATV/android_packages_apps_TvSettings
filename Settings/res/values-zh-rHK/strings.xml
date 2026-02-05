@@ -1143,4 +1143,61 @@
     <string name="find_my_remote_slice_description" msgid="313598681990933215">"你的 Google TV 設有按鈕，按下後會在遙控器播放音效 30 秒。此功能只適用於支援的 Google TV 遙控器。\n\n如要停止播放音效，請按下遙控器上任何按鈕。"</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"啟用「尋找遙控器」後，你可以令位置不明的 Google TV 遙控器播放音效，從而找出裝置。"</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"播放音效"</string>
+    <string name="waydroid_options">Waydroid 選項</string>
+    <string name="waydroid_notification_channel">Waydroid 通知</string>
+
+    <string name="current_native_bridge">正在使用的 ARM 轉譯層</string>
+    <string name="current_gralloc_impl">正在使用的 Gralloc 實作</string>
+    <string name="current_codec2_impl">正在使用的 Codec2 實作</string>
+
+    <string name="waydroid_native_bridge_category">ARM 支援</string>
+    <string name="native_bridge">ARM 轉譯層</string>
+    <string name="native_bridge_summary">執行不支援 x86 的程式時必須啟用</string>
+
+    <string name="waydroid_graphics_category">圖像</string>
+    <string name="gralloc_impl">Gralloc 實作</string>
+    <string name="gralloc_impl_summary">僅 minigbm/minigbm_celadon 支援 YUV 影片格式</string>
+
+    <string name="waydroid_gapps_category">Google 應用程式</string>
+    <string name="device_spoof">裝置偽裝</string>
+    <string name="device_spoof_summary">啟用裝置偽裝以繞過 Google Play 認證檢查</string>
+
+    <string name="waydroid_video_category">影片</string>
+    <string name="codec2_impl">Codec2 實作</string>
+    <string name="codec2_impl_summary">選擇一種用於影片處理的 Codec2 實作</string>
+    <string name="hwaccel">硬件影片加速</string>
+    <string name="hwaccel_summary">啟用基於 VA-API 的硬件影片加速支援</string>
+    <string name="hwaccel_drm_prime">零複製影片解碼</string>
+    <string name="hwaccel_drm_prime_summary">這通常能為 Intel iGPU 提供更好的影片播放效能（僅適用於支援 YUV 的 gralloc 實作）</string>
+    <string name="hwaccel_force_hwaccel">強制啟用硬件影片解碼</string>
+    <string name="hwaccel_force_hwaccel_summary">播放影片時僅使用支援硬件解碼的編碼格式</string>
+    <string name="hwaccel_supported_codecs">目前 GPU 支援硬件解碼的編碼格式</string>
+
+    <string name="waydroid_misc_category">雜項</string>
+    <string name="forward_notifications">通知整合</string>
+    <string name="forward_notifications_summary">透過 D-Bus 將 Android 通知轉發至 Wayland/X11</string>
+
+    <string-array name="native_bridge_entries">
+        <item>已停用</item>
+        <item>libhoudini (建議)</item>
+    </string-array>
+
+    <string-array name="gralloc_impl_entries">
+        <item>自動選擇 (建議)</item>
+        <item>minigbm</item>
+        <item>minigbm_celadon (僅限 Intel GPU 使用)</item>
+        <item>minigbm_gbm_mesa</item>
+        <item>gbm</item>
+    </string-array>
+
+    <string-array name="device_spoof_entries">
+        <item>已停用</item>
+    </string-array>
+
+    <string-array name="codec2_impl_entries">
+        <item>自動選擇 (建議)</item>
+        <item>c2.ffmpeg + c2.android</item>
+        <item>c2.intel + c2.android (需要 minigbm_celadon)</item>
+        <item>c2.android (需要支援 YUV 的 gralloc 實作)</item>
+    </string-array>
 </resources>

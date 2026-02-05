@@ -385,5 +385,52 @@
         <item>10</item>
     </string-array>
 
+    <string-array name="native_bridge_entries">
+        <item>Disabled</item>
+        <item>libhoudini (recommended)</item>
+    </string-array>
+
+    <string-array name="native_bridge_values" translatable="false">
+        <item>_</item>
+        <item>libhoudini.so</item>
+    </string-array>
+
+    <string-array name="gralloc_impl_entries">
+        <item>Auto (recommended)</item>
+        <item>minigbm</item>
+        <item>minigbm_celadon (only for Intel GPUs)</item>
+        <item>minigbm_gbm_mesa</item>
+        <item>gbm</item>
+    </string-array>
+
+    <string-array name="gralloc_impl_values" translatable="false">
+        <item></item>
+        <item>minigbm</item>
+        <item>minigbm_celadon</item>
+        <item>minigbm_gbm_mesa</item>
+        <item>gbm</item>
+    </string-array>
+
+    <string-array name="device_spoof_entries">
+        <item>Disabled</item>
+    </string-array>
+
+    <string-array name="device_spoof_values" translatable="false">
+        <item></item>
+    </string-array>
+
+    <string-array name="codec2_impl_entries">
+        <item>Auto (recommended)</item>
+        <item>c2.ffmpeg + c2.android</item>
+        <item>c2.intel + c2.android (requires minigbm_celadon)</item>
+        <item>c2.android (requires YUV-capable grallocs)</item>
+    </string-array>
+
+    <string-array name="codec2_impl_values" translatable="false">
+        <item></item>
+        <item>c2.ffmpeg</item>
+        <item>c2.intel</item>
+        <item>c2.android</item>
+    </string-array>
 
 </resources>

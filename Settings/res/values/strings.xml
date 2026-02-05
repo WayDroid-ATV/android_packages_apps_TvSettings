@@ -2880,4 +2880,40 @@
     <string name="find_my_remote_integration_title" translatable="false">@string/settings_find_my_remote_title</string>
     <string name="find_my_remote_integration_hint">When Find my remote is enabled, you can play a sound to locate your Google TV remote if it\'s misplaced.</string>
     <string name="find_my_remote_play_sound">Play sound</string>
+
+    <!-- Title of "Waydroid Options" settings -->
+    <string name="waydroid_options">Waydroid options</string>
+    <string name="waydroid_notification_channel">Waydroid notifications</string>
+
+    <!-- Description for Waydroid options -->
+    <string name="current_native_bridge">ARM translation layer in use</string>
+    <string name="current_gralloc_impl">Gralloc implementation in use</string>
+    <string name="current_codec2_impl">Codec2 implementation in use</string>
+
+    <string name="waydroid_native_bridge_category">ARM support</string>
+    <string name="native_bridge">ARM translation layer</string>
+    <string name="native_bridge_summary">Required for running applications that only support ARM</string>
+
+    <string name="waydroid_graphics_category">Graphics</string>
+    <string name="gralloc_impl">Gralloc implementation</string>
+    <string name="gralloc_impl_summary">Only minigbm/minigbm_celadon supports YUV</string>
+
+    <string name="waydroid_gapps_category">Google Apps</string>
+    <string name="device_spoof">Device spoofing</string>
+    <string name="device_spoof_summary">Enable device spoofing to bypass Google Play certification check</string>
+
+    <string name="waydroid_video_category">Video</string>
+    <string name="codec2_impl">Codec2 implementation</string>
+    <string name="codec2_impl_summary">Select a Codec2 implementation for video processing</string>
+    <string name="hwaccel">Hardware acceleration for video playback</string>
+    <string name="hwaccel_summary">Enable VA-API based hardware-accelerated video decoding support</string>
+    <string name="hwaccel_drm_prime">Zero-copy video decoding support</string>
+    <string name="hwaccel_drm_prime_summary">This usually provides better video playback performance for Intel iGPUs (only for YUV-capable grallocs)</string>
+    <string name="hwaccel_force_hwaccel">Force usage of hardware-accelerated video codecs</string>
+    <string name="hwaccel_force_hwaccel_summary">Use only HW codecs for video decoding</string>
+    <string name="hwaccel_supported_codecs">HW codec(s) supported by your GPU</string>
+
+    <string name="waydroid_misc_category">Miscellaneous</string>
+    <string name="forward_notifications">Notification integration</string>
+    <string name="forward_notifications_summary">Forward Android notification to Wayland/X11 via D-Bus</string>
 </resources>
