@@ -66,6 +66,7 @@ public class AboutState implements State {
     private static final String PROPERTY_URL_SAFETYLEGAL = "ro.url.safetylegal";
     private static final String PROPERTY_SELINUX_STATUS = "ro.build.selinux";
     private static final String KEY_KERNEL_VERSION = "kernel_version";
+    private static final String KEY_OPENGL_VERSION = "opengl_version";
     private static final String KEY_BUILD_NUMBER = "build_number";
     private static final String KEY_DEVICE_MODEL = "device_model";
     private static final String KEY_SELINUX_STATUS = "selinux_status";
@@ -150,6 +151,8 @@ public class AboutState implements State {
         buildNumberPref.setEnabled(true);
         mPreferenceCompatManager.getOrCreatePrefCompat(KEY_KERNEL_VERSION)
                 .setSummary(DeviceInfoUtils.getFormattedKernelVersion(context));
+        mPreferenceCompatManager.getOrCreatePrefCompat(KEY_OPENGL_VERSION)
+                .setSummary(DeviceInfoUtils.getOpenGLVersion());
 
         final PreferenceCompat selinuxPref = mPreferenceCompatManager.getOrCreatePrefCompat(
                 KEY_SELINUX_STATUS);
