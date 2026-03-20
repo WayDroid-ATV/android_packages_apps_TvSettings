@@ -97,6 +97,9 @@ android_app {
     static_libs: [
         "TvSettingsStaticLibs",
     ],
+    jni_libs: [
+        "libtvsettings_vulkan",
+    ],
     // TODO(b/319716205): re-enable use_resource_processor
     use_resource_processor: false,
 }
@@ -126,6 +129,9 @@ android_app {
     privileged: true,
     static_libs: [
         "TvSettingsStaticLibs",
+    ],
+    jni_libs: [
+        "libtvsettings_vulkan",
     ],
     // TODO(b/319716205): re-enable use_resource_processor
     use_resource_processor: false,
@@ -163,6 +169,9 @@ android_app {
     privileged: true,
     static_libs: [
         "TvSettingsStaticLibs",
+    ],
+    jni_libs: [
+        "libtvsettings_vulkan",
     ],
     jacoco: {
         include_filter: [
@@ -206,6 +215,9 @@ android_app {
     privileged: true,
     static_libs: [
         "TvSettingsStaticLibs",
+    ],
+    jni_libs: [
+        "libtvsettings_vulkan",
     ],
     // TODO(b/319716205): re-enable use_resource_processor
     use_resource_processor: false,
